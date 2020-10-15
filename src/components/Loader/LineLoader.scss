@@ -1,0 +1,40 @@
+
+ 
+  
+  .animated {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+}
+
+.yt-loader {
+    -webkit-animation-name: horizontalProgressBar;
+    animation-name: horizontalProgressBar;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    background:  #3498db;;
+    height: 3px;
+    left: 0;
+    top: 70px;
+    width: 0%;
+    z-index: 9999;
+    position:fixed;
+}
+
+.yt-loader:after{
+  display: block;
+  position: absolute;
+  content:'';
+  right: 0px;
+  width: 100px;
+  height: 100%;
+ 
+  opacity: 0.1;
+}
+@keyframes horizontalProgressBar
+{
+    0%   {width: 0%;}
+    100% {width: 100%;}
+}
